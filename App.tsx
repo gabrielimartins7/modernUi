@@ -1,6 +1,9 @@
 import React from "react";
-import AppLoading from "expo-app-loading";
 import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto';
+import AppLoading from "expo-app-loading";
+import { ThemeProvider } from 'styled-components/native';
+
+import { THEME } from './src/screens/Theme';
 
 import { Home } from './src/screens/Home';
 
@@ -15,6 +18,8 @@ export default function App() {
     return <AppLoading />
   }
   return (
-    <Home />
+    <ThemeProvider theme={THEME}>
+      <Home />
+    </ThemeProvider>
   );
 }

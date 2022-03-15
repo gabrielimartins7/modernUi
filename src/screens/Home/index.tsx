@@ -1,12 +1,13 @@
 import React from "react";
-import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Container, Header } from './styles';
+
+import coverImg from '../../assets/cover.png';
 
 export function Home(){
   return(
     <Container>
-      <Text>Home</Text>
+      <Header source={coverImg}/>
     </Container>
   );
 }

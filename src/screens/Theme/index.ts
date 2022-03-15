@@ -8,6 +8,8 @@ export default {
     PRIMARY_800: '#3B0C59',
   },
   FONTS: {
-
+    REGULAR: 'Roboto_400Regular',
+    MEDIUM: 'Roboto_500Medium',
+    BOLD: 'Roboto_700Bold',
   }
 };
